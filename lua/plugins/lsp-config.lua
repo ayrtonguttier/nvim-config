@@ -22,9 +22,11 @@ return {
             require('mason-lspconfig').setup({
                 ensure_installed = {
                     'gopls',
-                    'tsserver',
                     'lua_ls',
-                    'emmet_language_server',
+                    'eslint',
+                    'tsserver',
+                    'omnisharp',
+                    'omnisharp_mono',
                 },
                 handlers = {
                     lsp_zero.default_setup
