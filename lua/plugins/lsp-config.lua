@@ -25,8 +25,7 @@ return {
                     'lua_ls',
                     'eslint',
                     'tsserver',
-                    'omnisharp',
-                    'omnisharp_mono',
+                    'pyright',
                 },
                 handlers = {
                     lsp_zero.default_setup
