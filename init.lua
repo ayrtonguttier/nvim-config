@@ -1,3 +1,11 @@
-require('config.map')
-require('config.set')
 require('packages.main')
+
+require('config.set')
+require('config.map')
+require('config.miniai')
+require('config.telescope')
+require('config.undotree')
+require('config.treesitter')
+require('config.lsp')
+require('config.blink')
+require('config.theme')
