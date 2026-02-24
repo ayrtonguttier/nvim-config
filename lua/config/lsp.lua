@@ -1,12 +1,25 @@
+require('tiny-inline-diagnostic').setup({
+  options = {
+    multilines = {
+      enabled = true
+    }
+  }
+})
+
 vim.diagnostic.config({
-  virtual_text = true
+  virtual_text = false
 })
 
 vim.lsp.config('roslyn', {
   capabilities = require('blink.cmp').get_lsp_capabilities(),
 })
 
-vim.lsp.enable('roslyn')
+vim.lsp.config('gopls', {
+  capabilities = require('blink.cmp').get_lsp_capabilities(),
+})
+
+
+vim.lsp.enable({'roslyn', 'gopls'})
 
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>lr', vim.lsp.buf.rename)

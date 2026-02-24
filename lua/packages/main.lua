@@ -11,4 +11,5 @@ vim.pack.add({
 	{ src = gh('seblyng/roslyn.nvim') },
 	{ src = gh('saghen/blink.cmp') , version = vim.version.range("^1")},
 	{ src = gh('folke/tokyonight.nvim') },
+  { src = gh('rachartier/tiny-inline-diagnostic.nvim')}
 })
